@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="ProjectName" id="ProjectName">ToDoList</p>
+    <div class="mainField">
+        <div id="createTaskField">
+            <button id="createTaskBtn" class="createTaskBtn">Создать задачу</button>
+
+            <div id="taskModal" class="modal">
+                <div class="modalContent">
+                    <span class="close">&times;</span>
+                    <h2>Создать задачу</h2>
+                    <ladel>Название:</ladel>
+                    <input type="text" id="taskTitle">
+
+                    <label>Описание:</label>
+                    <input type="text" id="taskDescription">
+
+                    <label>Дедлайн:</label>
+                    <input type="datetime-local" id="taskDeadline">
+
+                    <label>Приоритет:</label>
+                    <select id="taskPriority">
+                        <option value="">null</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                        <option value="Critical">Critical</option>
+                    </select>
+
+                    <button id="submitTaskCreate">Создать</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="filterField" class="filterField">
+            <label>Статус:</label>
+            <select id="filterStatus">
+                <option value="">all</option>
+                <option value="Active">Active</option>
+                <option value="Completed">Completed</option>
+                <option value="Overdue">Overdue</option>
+                <option value="Late">Late</option>
+            </select>
+
+            <label>Приоритет:</label>
+            <select id="filterPriority">
+                <option value="">all</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+                <option value="Critical">Critical</option>
+            </select>
+
+            <label>Сортировка:</label>
+            <select id="sortDirection">
+                <option value="ASC">ASC</option>
+                <option value="DESC">DESC</option>
+            </select>
+
+            <label>Сортировка по приоритету:</label>
+            <select id="sortByPriority">
+                <option value="">-</option>
+                <option value="true">Not the most important</option>
+                <option value="false">Most important</option>
+            </select>
+
+            <button id="applyFilters" class="applyFilters">Применить</button>
+            
+        </div>
+
+        <div id="tasksField"></div>
+
+        <div id="taskDetailsModal" class="modal">
+            <div class="modalContent">
+                <span id="closeModal" class="close">&times;</span>
+                <h2 id="taskDetailsTitle"></h2>
+                <p><strong>Описание:</strong> <span id="taskDetailsDescription"></span></p>
+                <p><strong>Дедлайн:</strong> <span id="taskDetailsDeadline"></span></p>
+                <p><strong>Статус:</strong> <span id="taskDetailsStatus"></span></p>
+                <p><strong>Приоритет:</strong> <span id="taskDetailsPriority"></span></p>
+                <p><strong>Создано:</strong> <span id="taskDetailsCreated"></span></p>
+                <p><strong>Обновлено:</strong> <span id="taskDetailsUpdated"></span></p>
+            </div>
+        </div>
+
+        <div id="editTaskModal" class="modal">
+            <div class="modalContent">
+                <span id="closeEditModal" class="close">&times;</span>
+                <h2>Редактирование задачи</h2>
+                <label>Название:</label>
+                <input type="text" id="editTaskTitle">
+        
+                <label>Описание:</label>
+                <input type="text" id="editTaskDescription">
+        
+                <label>Дедлайн:</label>
+                <input type="datetime-local" id="editTaskDeadline">
+        
+                <label>Приоритет:</label>
+                <select id="editTaskPriority">
+                    <option value="">null</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                    <option value="Critical">Critical</option>
+                </select>
+        
+                <button id="saveTaskChanges">Сохранить</button>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <script src="code.js"></script>
+</body>
+</html>

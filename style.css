@@ -1,0 +1,151 @@
+body{
+    background-color: #8bdf74;
+}
+.ProjectName{
+    color: #303030;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 12%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.modalContent{
+    background: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    border: 1px solid #888;
+    border-radius: 10px;
+}
+.close {
+    color: red;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px 5px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.task-title {
+    flex-grow: 1;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.task-status, .task-priority {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.edit-task, .delete-task {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.task-checkbox {
+    transform: scale(1.2);
+}
+
+.mainField{
+    background-color: aliceblue;
+    width: 80%;
+    margin-left: 10%;
+    border: 3px solid #303030;
+    border-radius: 20px;
+    padding-bottom: 8px;
+}
+
+.filterField{
+    margin-left: 15%;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 69.5%;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 17px;
+    color: #303030;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8bdf74;
+}
+.createTaskBtn{
+    border: 2px solid black;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    background-color: #8bdf74;
+    color: #303030;
+    margin-left: 2.5%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.applyFilters{
+    border: 2px solid black;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 90px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: white;
+    color: #303030;
+}
+#filterStatus, #filterPriority, #sortDirection, #sortByPriority{
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.edit-task{
+    border: none;
+    background-color: #ffb300;
+    padding-bottom: 4px;
+    border-radius: 6px;
+}
+.delete-task{
+    border: none;
+    background-color: #ff3838;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 7px;
+    border-radius: 6px;
+}
+#saveTaskChanges, #submitTaskCreate{
+    background-color: #8bdf74;
+    color: #303030;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+#taskTitle, #taskDescription, #taskDeadline,#taskPriority, #editTaskTitle, #editTaskDescription, #editTaskDeadline, #editTaskPriority{
+    border: 1px solid black;
+    border-radius: 5px;
+}

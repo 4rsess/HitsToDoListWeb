@@ -51,6 +51,7 @@ body{
     flex-grow: 1;
     margin: 0 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .task-status, .task-priority {
@@ -105,6 +106,7 @@ body{
     margin-left: 2.5%;
     margin-top: 1%;
     margin-bottom: 2%;
+    cursor: pointer;
 }
 .applyFilters{
     border: 2px solid black;
@@ -116,6 +118,7 @@ body{
     margin-bottom: 5px;
     background-color: white;
     color: #303030;
+    cursor: pointer;
 }
 #filterStatus, #filterPriority, #sortDirection, #sortByPriority{
     border: 2px solid black;
